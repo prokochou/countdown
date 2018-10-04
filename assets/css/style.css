@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+}
+
+.bgimg-1 {
+  background-image: url("../img/background.jpg");
+  height: 100%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover-container {
+    max-width: 102em;
+}
+
+.mb-auto{
+    margin-bottom: 150px;
+}
+
+@media (min-width: 48em)
+.masthead-brand {
+    float: left;
+}
+
+.masthead-brand {
+    margin-bottom: 110;
+}
+
+.h1, h1 {
+	color:#99b5ce;
+}
+
+.h3, h3 {
+    font-size: 3.75rem;
+    text-align: center;
+    color: white;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+header, hgroup, main, nav, section {
+    display: block;
+    margin-bottom: 60px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #58b989;
+}
+
