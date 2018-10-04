@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count Down</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+	<link rel="stylesheet" href="assets/lib/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	<script type="text/javascript">
+	// Load google charts
+	google.charts.load('current', {'packages':['corechart']});
+	google.charts.setOnLoadCallback(drawChart);
+
+	//calculate dates
+	var total_days = 401;
+	var today=new Date();
+	var last_day=new Date(2019, 9, 14);
+	var one_day=1000*60*60*24;
+	var remaining = Math.ceil((last_day.getTime()-today.getTime())/(one_day));
+	var percentage = remaining/ total_days; 
+	var past = 1 - percentage;
+
+	// Draw the chart and set the chart values
+	function drawChart() {
+	  var data = google.visualization.arrayToDataTable([
+	  ['Remaining', 'Past Time'],
+	  ['Remaining Time', percentage],
+	  ['Past Time', past],
+
+	]);
+
+	  // Optional; add a title and set the width and height of the chart
+	  var options = {
+	  	'width':600,
+	  	'height':400,
+	  	'backgroundColor':'#D5D8DC',
+	  	pieHole: 0.5, 
+	  	colors: ['#e6693e', '#f6c7b6'],
+	  	chartArea: {
+    	height: '100%',
+    	width: '100%',
+    	top: 32,
+    	left: 32,
+    	bottom: 32,
+    	right: 16},
+    	hAxis : {textColor: '#ffffff'},
+	  	};
+
+	  // Display the chart inside the <div> element with id="piechart"
+	  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+	  chart.draw(data, options);
+	}
+	</script>
+
+
+</head>
+<body>
+<div class="bgimg-1">
+    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+      <header class="masthead>
+        <div class="inner">
+          <h3 class="masthead-brand">Countdown Timer</h3>
+        </div>
+      </header>
+
+	 <div class="container">
+	  <div class="row">
+	    <div class="col">
+	      <div id="piechart"></div>
+	    </div>
+	    <div class="col">
+	      <h1>From: &ensp;Aug 10, 2018</h2>
+	      <h1>To:&emsp;&emsp;Sep 14, 2019</h2>
+	    </div>
+	  </div>     
+
+      <footer class="mastfoot">
+        <div class="inner">
+          <p>Photo by Proko in Norway</p>
+        </div>
+      </footer>
+    </div>
+</div>
+	
+
+
+ 
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/js/count_down.js"></script>
+<script src="assets/lib/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</body>
+</html>
