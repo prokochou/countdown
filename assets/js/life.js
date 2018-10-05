@@ -7,14 +7,14 @@ var last_day=new Date(2019, 9, 14);
 var one_day=1000*60*60*24;
 var remaining=Math.ceil((last_day.getTime()-today.getTime())/(one_day));
 if (remaining >= 401){
-	var percentage = '100%';
+	var percentage = '0';
 }else{
-	var percentage = ((remaining/total_days)*100).toFixed(1) + '%'; 
+	var percentage = ((remaining/total_days)*100); 
 }
-var past = 1 - percentage;
+var past = (100 - percentage).toFixed(1);
 
 
 window.onload = function what(){
 	document.getElementById("remain-id").innerHTML= "&nbsp;&nbsp;"+ remaining;
-	document.getElementById("percentage").innerHTML= percentage;
+	document.getElementById("percentage").innerHTML= past + "%";
 };
