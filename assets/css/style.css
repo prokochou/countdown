@@ -1,19 +1,28 @@
 body, html {
-    height: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/background.jpg");
+  position: relative;
+
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+    
+    
 }
 
-.bgimg-1 {
+/*.bgimg-1 {
   background-image: url("../img/background.jpg");
   height: 100%;
+
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 0.8;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
-}
+}*/
 
 .cover-container {
     max-width: 102em;
@@ -33,6 +42,10 @@ body, html {
 }
 
 .h1, h1 {
+  color:#ffffff;
+}
+
+.h2, h2 {
 	color:#99b5ce;
 }
 
@@ -52,8 +65,41 @@ header, hgroup, main, nav, section {
 }
 
 p {
+    font-size: 20px;
     margin-top: 0;
     margin-bottom: 1rem;
     color: #58b989;
+}
+
+#remain-id{
+  font-size: 100px;
+  color: #FFFFFF;
+}
+
+#percentage{
+  font-size: 200px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.col{
+  margin: 20px;
+}
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+img {
+  width: 100%;
 }
 
