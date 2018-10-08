@@ -74,6 +74,7 @@ p {
 #remain-id{
   font-size: 100px;
   color: #dae0e5d6;
+  margin: -10px;
 }
 
 #percentage{
@@ -101,5 +102,14 @@ p {
 
 img {
   width: 100%;
+}
+
+.masthead-brand {
+    margin-bottom: 110;
+    margin: .6em;
+}
+
+.col-lg-6 {
+    text-align: center;
 }
 
