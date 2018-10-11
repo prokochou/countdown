@@ -4,7 +4,7 @@
 var total_days = 401;
 var today=new Date();
 
-var last_day=new Date(2019, 9, 14);
+var last_day=new Date(2019, 5, 31);
 var one_day=1000*60*60*24;
 var remaining=Math.ceil(((last_day.getTime()-today.getTime())/(one_day))-30);
 if (remaining >= 401){
