@@ -1,7 +1,7 @@
 
 
 //calculate dates
-var total_days = 401;
+var total_days = 295;
 var today=new Date();
 
 var last_day=new Date(2019, 5, 31);
