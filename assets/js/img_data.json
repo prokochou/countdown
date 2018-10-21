@@ -1,0 +1,8 @@
+data = '[
+{"name" : "Ashwin", "age" : "20"},
+{"name" : "Abhinandan", "age" : "20"}]';
+
+var obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');
+
+
+{"week_no":"","title":"", "link":"","img":"","alt":""}
