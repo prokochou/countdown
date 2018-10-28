@@ -5,4 +5,4 @@ data = '[
 var obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');
 
 
-{"week_no":"","title":"", "link":"","img":"","alt":""}
+,{"week_no":"","title":"", "link":"","img":"assets/img/week9.jpg","alt":"Week9"}
