@@ -42,7 +42,7 @@ body, html {
 }
 
 .h1, h1 {
-  color:#dae0e5d6;
+  color:#f8f9fab8;
 }
 
 .h2, h2 {
@@ -73,7 +73,7 @@ p {
 
 #remain-id{
   font-size: 100px;
-  color: #dae0e5d6;
+  color: #f8f9fab8;
   margin: -10px;
 }
 
