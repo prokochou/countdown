@@ -24,6 +24,12 @@ body, html {
   background-size: cover;
 }*/
 
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
 .cover-container {
     max-width: 102em;
 }
