@@ -7,7 +7,6 @@ var today=new Date();
 var last_day=new Date(2019, 5, 31);
 var one_day=1000*60*60*24;
 var remaining=Math.ceil(((last_day.getTime()-today.getTime())/(one_day))-30);
-alert (remaining);
 if (remaining < 0){
 	var percentage = '0';
 	remaining = 0;
